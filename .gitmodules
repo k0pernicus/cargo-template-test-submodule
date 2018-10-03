@@ -1,0 +1,3 @@
+[submodule "cargo-generate-submodule"]
+	path = cargo-generate-submodule
+	url = https://github.com/k0pernicus/cargo-generate-submodule
