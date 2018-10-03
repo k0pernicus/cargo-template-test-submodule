@@ -1,10 +1,10 @@
-# cargo-template-rocket-base
+# cargo-template-test-submodule
 
-A base cargo-template for building a Rocket application
+A test cargo-template for testing cargo template with git submodules.
 
 ### Warning
 
-To use the Rocket crate, you must use a Nighly version of Rust.
+To test this, you must use a Nighly version of Rust.
 
 ```bash
 rustup install nightly
@@ -17,18 +17,16 @@ rustup update nightly
 ### How to use it ?
 
 1. Install [cargo-generate](https://github.com/ashleygwilliams/cargo-generate):
-```bash
+
+```sh
 cargo install cargo-generate
 ```
-2. Clone the Rocket application:
-```bash
-cargo generate --git https://github.com/k0pernicus/cargo-template-rocket-base --name yourprojectname
+
+2. Clone this application, which is a fork of [rocket-base](https://github.com/k0pernicus/cargo-template-rocket-base):
+
+```sh
+cargo generate --git https://github.com/k0pernicus/cargo-template-test-submodule --name test-submodule
 ```
-3. Override the default toolchain in `yourprojectname`:
-```bash
-cd yourprojectname && rustup override set nightly
-```
-4. Run the app:
-```bash
-cargo run
-```
+
+3. Check if the internal `cargo-generate-submodule` directory contains at least a README.md file.  
+If not, this test failed :(
