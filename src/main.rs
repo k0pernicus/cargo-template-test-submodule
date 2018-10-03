@@ -5,7 +5,7 @@ extern crate rocket;
 
 #[get("/")]
 fn index() -> &'static str {
-    "Hello world, from the rocket-base template! :)"
+    "Hello, world!"
 }
 
 fn main() {
