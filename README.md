@@ -2,6 +2,11 @@
 
 A test cargo-template for testing cargo template with git submodules.
 
+### SECURITY ADVISORY
+
+This submodule uses `traitobject`, a crate with several security flaws, which has been flagged as "unmaintained".  
+This submodule should **not** be used any other than a test crate, and should **not** be used as production level.
+
 ### Warning
 
 To test this, you must use a Nighly version of Rust.
